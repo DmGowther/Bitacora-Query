@@ -13,7 +13,7 @@ CREATE TABLE dbo.bitacora
     [ObjectName] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
     [ObjectType] [varchar](25) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
     [SqlCommand] [varchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-    [EventDate] [datetime] NOT NULL CONSTRAINT [DF_bitacora_fechaEvento]  DEFAULT (getdate()),
+    [EventDate] [datetime] NOT NULL CONSTRAINT [DF_bitacora_EventDate]  DEFAULT (getdate()),
     [LoginName] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
     [HostName] [varchar](70) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
     [AppName] [varchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
